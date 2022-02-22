@@ -33,6 +33,8 @@ class Perro(Mamifero):
         self.raza = raza
         self.color = color
         self.tamaño = tamaño
-
-
-
+    def __str__(self):
+        return super().__str__()[:-1]+", raza: {}, color: {}, tamaño: {}]".format(self.raza,self.color, self.tamaño)
+    
+    def ladrar(self):
+        print("guau")

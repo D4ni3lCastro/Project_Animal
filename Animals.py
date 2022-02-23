@@ -38,3 +38,21 @@ class Perro(Mamifero):
     
     def ladrar(self):
         print("guau")
+
+class Gato(Mamifero):
+    def  __init__(self, nombre, edad, vacunado, color, raza):
+        super().__init__(nombre, edad, vacunado)
+        self.color = color 
+        self.raza = raza 
+
+        def __str__(self):
+           return super().___str__()[:-1]+", raza: {}, color: {}]".format(self.raza, self.color)
+
+        def maullar():
+            print("miau")
+        
+        def comer(self,alimento):
+            print ("purr ñiau *estoy comiendo {}*".format(alimento))
+        
+        def arañar(self,objeto):
+            print ("purr miau *estoy arañando {}*".format(objeto))

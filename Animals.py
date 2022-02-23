@@ -38,3 +38,11 @@ class Perro(Mamifero):
     
     def ladrar(self):
         print("guau")
+
+        
+    def comer(self,alimento):
+        print("woof guau *estoy comiendo {}*".format(alimento))
+        
+    def cuidar(self,objeto):
+        print("woof *estoy vigilando {}*".format(objeto))
+
